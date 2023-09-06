@@ -1,6 +1,29 @@
 .body{
     background-color: white;
     display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.buscador{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+.buscar {
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 .logo{
 
@@ -17,6 +40,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 150px;
 }
 .articles{
     display: block;
@@ -25,5 +49,11 @@
     background-color: aqua;
 }
 .division{
+    background-color: black;
+}
+.descripcion{
+    display: block;
+    width: 200px;
+    height: 100;
     background-color: black;
 }
