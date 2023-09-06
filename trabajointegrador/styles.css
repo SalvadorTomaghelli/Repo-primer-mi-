@@ -1,0 +1,41 @@
+.head{
+    
+}
+
+.body{
+    background-color: white;
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.logo{
+
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.section{
+    background-color: white;
+    padding: 0px 0px 50px 0px;
+}
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+.articles{
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-color: aqua;
+}
+.division{
+    background-color: black;
+}
+.descripcion{
+    display: block;
+    width: 200px;
+    height: 100;
+    background-color: black;
+}
