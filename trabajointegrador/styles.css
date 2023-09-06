@@ -1,7 +1,12 @@
+.head{
+    
+}
+
 .body{
     background-color: white;
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
+<<<<<<< HEAD:styles.css
 }
 .buscador{
     padding: 10px;
@@ -24,6 +29,8 @@ input[type="text"] {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+=======
+>>>>>>> e52cb4bda49d03f9deb994895ca854ff3645d96a:trabajointegrador/styles.css
 }
 .logo{
 
