@@ -1,6 +1,7 @@
 .body{
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 50px;
+    background-color: rgb(40,40,40);
 }
 .footer{
     background-color: red;

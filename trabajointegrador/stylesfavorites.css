@@ -1,3 +1,7 @@
+.body{
+    background-color: rgb(40,40,40);
+}
+
 .div{
     display: flex;
     flex-wrap: wrap;
