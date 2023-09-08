@@ -1,0 +1,35 @@
+.body{
+    background-color: rgb(40, 40, 40);
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+.palabras{
+    text-align: center;   
+}
+.h1{
+    font-size: 70px;
+}
+.descripcion{
+    font-size: 25px;
+}
+h2{
+    font-size: 40px;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+.articles{
+    display: block;
+    width: 200px;
+    height: 300px;
+}
+.img{
+    width: 200px;
+    height: 300px;  
+}
+
