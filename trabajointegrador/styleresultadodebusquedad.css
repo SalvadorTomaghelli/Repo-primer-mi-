@@ -47,10 +47,6 @@ input[type="text"] {
     height: 180px;
     border-radius: 50%;
 }
-.body{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
-}
 .section{
     display: flex;
     flex-direction: row;

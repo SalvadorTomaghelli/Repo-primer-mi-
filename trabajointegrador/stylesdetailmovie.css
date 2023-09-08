@@ -1,11 +1,14 @@
 .body{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
 }
 .section{
     display: flex;
     flex-direction: row;
+    font-size: 50px;
 
+}
+.h1{
+    font-size: 50px;
 }
 
 .img{
