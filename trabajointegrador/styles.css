@@ -1,5 +1,5 @@
 .body{
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
     
@@ -50,15 +50,21 @@ input[type="text"] {
     background-color: aqua;
     
 }
+.img{
+    width: 200px;
+    height: 300px;
+    
+}
 .division{
     background-color: black;
+    color: white;
 }
 .descripcion{
     display: block;
     width: 200px;
     height: 100;
     background-color: black;
-    
+    color: white;
 }
 
 .contenedor{
