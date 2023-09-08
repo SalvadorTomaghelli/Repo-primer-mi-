@@ -46,4 +46,28 @@ header .contenedor{
 .buscador{
     padding: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+.buscar {
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logo{
+
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
 }
