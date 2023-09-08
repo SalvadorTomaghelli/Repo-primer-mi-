@@ -52,7 +52,6 @@ input[type="text"] {
     height: 300px;  
 }
 .division{
-    background-color: black;
     color: white;
 }
 .descripcion{
@@ -79,4 +78,8 @@ header .contenedor{
 }
 .footer{
     background-color: red;
+}
+.h2{
+    color: white;
+    font-size: 40px;
 }
