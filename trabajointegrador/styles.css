@@ -81,3 +81,6 @@ header .contenedor{
     justify-content: space-between;
     align-items: center;
 }
+.footer{
+    background-color: red;
+}

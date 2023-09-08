@@ -1,13 +1,33 @@
-.div{
+.body{
+    background-color: rgb(40, 40, 40);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.h1{
+    justify-content: center;
+    color: white;
+}
+.h2{
+    display: block;
+    justify-content: center;
+    color: white;
+}
+.section{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;   
+    color: white;
+}
+.generos{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    color: white;
 }
-.img{
-    width: 200px;
-    height: 300px;
+.palabra{
+    font-size: 50px;
+    color: white;
 }
+<<<<<<< HEAD:trabajointegrador/generos.css
+=======
 .footer{
     background-color: red;
 }
@@ -53,3 +73,4 @@ input[type="text"] {
     height: 180px;
     border-radius: 50%;
 }
+>>>>>>> fea20134e55d31086a35b1eee62037abaa410c80:trabajointegrador/stylesgeneros.css

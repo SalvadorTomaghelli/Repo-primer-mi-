@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesfavorites.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="contenedor">
+            <img src="./logo/descarga.jpg" class="logo">
+            <div class="buscador">
+                <form action="./resultadodebusquedad.html" method="get">
+                    <input type="text" name="q" placeholder="Buscar....">
+                    <input type="submit" value="Buscar" class="buscar">
+                </form>
+            </div>
+            <nav class="nav">
+                <a href="./home.html">Inicio</a>
+                <a href="#">Generos</a>
+                <a href="./favorites.html">Favoritos</a>
+            </nav>
+        </div>
+    </header>
     <section>
-        <h2>
+        <h1>
             Favoritos
-        </h2>
+        </h1>
         <div class="div">
             <article>
                 <img src="./PeliculasPoster/oppen2.jpg" alt="oppen" class="img"> 
@@ -20,5 +39,10 @@
             </article>
         </div>
     </section>
+    <footer class="footer">
+        <h3>
+            Mateo Ruete y Salvador Tomaghelli
+        </h3>
+    </footer>
 </body>
 </html>
