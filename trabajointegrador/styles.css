@@ -83,3 +83,26 @@ header .contenedor{
     color: white;
     font-size: 40px;
 }
+
+
+@media screen and (max-width:450px){
+    .articles{
+        display: block;
+        width: 20vh;
+        height: 40%;
+    }
+}
+@media screen and (max-width:900px){
+    .articles{
+        display: block;
+        width: 30vh;
+        height: 40%;
+    }
+}
+@media screen and (max-width:1100px){
+    .articles{
+        display: block;
+        width: 30vh;
+        height: 40%;
+    }
+}
