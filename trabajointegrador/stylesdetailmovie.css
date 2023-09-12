@@ -64,3 +64,14 @@ input[type="text"] {
     height: 180px;
     border-radius: 50%;
 }
+
+@media screen and (max-width:810px){
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 50vh;
+        height: 70vh;
+    }
+}
