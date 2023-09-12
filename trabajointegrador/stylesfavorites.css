@@ -1,8 +1,11 @@
 .body{
     background-color: rgb(40,40,40);
     font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
-
+.h1{
+    font-size: 50px;
+}
 .div{
     display: flex;
     flex-wrap: wrap;
@@ -57,4 +60,11 @@ input[type="text"] {
     width: 180px;
     height: 180px;
     border-radius: 50%;
+}
+
+@media screen and (max-width:450px){
+    .section{
+        width: 40vh;
+        height: 40%;
+    }
 }
