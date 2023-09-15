@@ -73,27 +73,30 @@ input[type="text"] {
     cursor: pointer;
 }
 .logo{
-
-    width: 180px;
-    height: 180px;
+    width: 25%;
     border-radius: 50%;
 }
-
-@media screen and (max-width:450px){
+@media (max-width:450px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 20%;
+    }
     .articles{
         display: block;
-        width: 20vh;
+        width: 100%;
         height: 40%;
     }
 }
-@media screen and (max-width:900px){
+@media (max-width:900px){
     .articles{
         display: block;
         width: 30vh;
         height: 40%;
     }
 }
-@media screen and (max-width:1100px){
+@media (max-width:1100px){
     .articles{
         display: block;
         width: 30vh;
