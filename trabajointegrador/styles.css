@@ -2,7 +2,7 @@
     background-color: rgb(40, 40, 40);
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
-    
+    background-image: url(./PeliculasPoster/50\ Dark\ Black\ Backgrounds\ _\ Art\ and\ Design.jpg);
 }
 .buscador{
     padding: 10px;
@@ -58,7 +58,6 @@ input[type="text"] {
     display: block;
     width: 200px;
     height: 100;
-    background-color: black;
     color: white;
 }
 

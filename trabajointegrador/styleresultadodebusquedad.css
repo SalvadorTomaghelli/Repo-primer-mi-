@@ -3,6 +3,7 @@
     margin-bottom: 50px;
     background-color: rgb(40,40,40);
     color: white;
+    background-image: url(./PeliculasPoster/50\ Dark\ Black\ Backgrounds\ _\ Art\ and\ Design.jpg);
 }
 .footer{
     background-color: red;
@@ -60,4 +61,15 @@ input[type="text"] {
 .img{
     width: 500px;
     height: 700px;
+}
+@media screen and (max-width:810px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img{
+        width: 50vh;
+        height: 70vh;
+    }
 }
