@@ -71,9 +71,11 @@ input[type="text"] {
     cursor: pointer;
 }
 .logo{
-
-    width: 180px;
-    height: 180px;
     border-radius: 50%;
 }
-
+@media (max-width:420px) {
+    .logo{
+        width: 25%;
+        border-radius: 50%;
+    }
+}

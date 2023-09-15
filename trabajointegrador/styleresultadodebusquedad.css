@@ -47,9 +47,6 @@ input[type="text"] {
     cursor: pointer;
 }
 .logo{
-
-    width: 180px;
-    height: 180px;
     border-radius: 50%;
 }
 .section{
@@ -74,6 +71,10 @@ input[type="text"] {
     }
     .ul{
         font-size: 30px;
+    }
+    .logo{
+        width: 25%;
+        border-radius: 50%;
     }
 
 }
