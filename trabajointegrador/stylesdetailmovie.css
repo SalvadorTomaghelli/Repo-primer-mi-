@@ -76,4 +76,7 @@ input[type="text"] {
         width: 50vh;
         height: 70vh;
     }
+    .ul{
+        font-size: 30px;
+    }
 }
