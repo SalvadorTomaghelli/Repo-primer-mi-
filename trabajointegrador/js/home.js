@@ -7,10 +7,12 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
 .then(function(data){
     for(let i = 0; i < 5; i++){
         container.innerHTML += `
-        <article class = "articles">
-            <h2>${data.results[i]}</h2>
-            <h2>${data.results[i].status}</h2>
-        <article>
+        <article class="articles">
+                        <a href="./detailmovie.html">
+                            <img src="./PeliculasPoster/oppen.jpg" alt=${data.results[i].title} class="img">
+                            <h3 class="descripcion">${data.results[i].title}<br>${data.results[i].release_date}</h3>
+                        </a>
+        </article>
         `
     }
     
