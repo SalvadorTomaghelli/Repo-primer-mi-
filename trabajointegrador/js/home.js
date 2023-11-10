@@ -10,7 +10,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
         container.innerHTML += `
         <article class="articles">
                         <a href="./detailmovie.html">
-                            <img src="./PeliculasPoster/oppen.jpg" alt=${data.results[i].title} class="img">
+                            <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
                             <h3 class="descripcion">${data.results[i].title}<br>${data.results[i].release_date}</h3>
                         </a>
         </article>
@@ -31,9 +31,10 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     for(let i = 0; i < 5; i++){
         container2.innerHTML +=`
         <article class="articles">
-                        <a href="./detailserie.html"><img src="./SeriesPoster/bettercallsaul.jpg" alt=${data.results[i].title} class="img">
-                            <h3 class="descripcion">${data.results[i].title}<br>${data.results[i].release_date}</h3></a>
+                        <a href="./detailserie.html"><img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].name} class="img">
+                            <h3 class="descripcion">${data.results[i].name}<br>${data.results[i].first_air_date}</h3></a>
                     </article>
         `
     }
+    console.log(data)
 })
