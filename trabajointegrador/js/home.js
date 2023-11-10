@@ -9,17 +9,16 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
         container.innerHTML += `
         <article class="articles">
                         <a href="./detailmovie.html">
-                            <img src="./PeliculasPoster/oppen.jpg" alt=${data.results[i].title} class="img">
+                            <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
                             <h3 class="descripcion">${data.results[i].title}<br>${data.results[i].release_date}</h3>
                         </a>
         </article>
         `}
+    console.log(data)
 })
 .catch(function(error){
     console.log(error)
 })
-
-
 
 let container2= document.querySelector("#hola")
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
@@ -40,3 +39,6 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
 .catch(function(error){
     console.log(error)
 })
+
+
+
