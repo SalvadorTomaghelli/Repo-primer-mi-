@@ -10,20 +10,23 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
 .then(function(data){
     for(i=0; i< data.results.length; i++){
         container.innerHTML +=`
-        <article>
+        <article class= "articles">
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
-        </article>
+            <h3 class="descripcion">${data.results[i].title}<br> ${data.results[i].release_date}
+            </h3>
         <article>
+        
             <ul class="ul">
                 <p>
-                    Nombre: ${data.results[i].title}<br> 
-                    Fecha de estreno: ${data.results[i].release_date}<br>
+                    
                     <a href="./favorites.html">
                         <button type="button" class="boton">Favoritos</button>
                     </a>
                 </p>
             </ul>   
         </article>
+        </article>
+        
      `
     }
 })

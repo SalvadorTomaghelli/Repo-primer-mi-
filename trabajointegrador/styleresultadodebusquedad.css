@@ -49,15 +49,27 @@ input[type="text"] {
 .logo{
     border-radius: 50%;
 }
+
 .section{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    font-size: 50px;
+    justify-content: space-around;
+    margin-bottom: 150px;
 }
 
+.articles{
+    display: block;
+    width: 200px;
+    height: 300px;
+}
 .img{
-    width: 500px;
-    height: 700px;
+    width: 100%;
+}
+.descripcion{
+    display: block;
+    height: 100;
+    color: white;
 }
 @media screen and (max-width:810px){
     .section{
