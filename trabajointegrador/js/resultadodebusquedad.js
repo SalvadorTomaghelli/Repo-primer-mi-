@@ -16,11 +16,8 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
         <article>
             <ul class="ul">
                 <p>
-                    Nombre: ${data.results[i].name}<br> 
-                    Rating: ${data.results[i].vote_average}<br>
-                    Fecha de estreno: ${data.results[i].first_air_date}<br>
-                    Sinopsis:${data.results[i].overview}<br>
-                    Genero:${data.results[i].genre_ids} <br>
+                    Nombre: ${data.results[i].title}<br> 
+                    Fecha de estreno: ${data.results[i].release_date}<br>
                     <a href="./favorites.html">
                         <button type="button" class="boton">Favoritos</button>
                     </a>
