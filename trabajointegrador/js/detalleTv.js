@@ -1,26 +1,29 @@
 let container = document.querySelector(".section")
 let query = location.search;
 let objbusqueda = new URLSearchParams(query)
-let id= objbusqueda.get(id)
+let id= objbusqueda.get("id")
 let apiKey = '26cb00ba0e4d52cae073a420c45e2d99'
 fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`)
     .then(function(response) {
         return response.json();
     })
-    .then(function(data) {
+    .then(function(data){
         console.log(data)
         container.innerHTML += `
             <article>
                 <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
-                <h2>${data.title}</h2>
-                <h3>${data.overview}</h3>
-                <h3>${data.runtime}</h3>
-                <h3>${data.release_date}</h3>
-                <h3>${data.genres[0].name}</h3>
-                <h3>${data.vote_average}</h3>
-                <a href="./favorites.html">
-                            <button type="button">Favoritos</button>
-                </a>
+                <ul class="ul">
+                    <p>
+                        Nombre: ${data.original_name}<br> 
+                        Fecha de estreno: ${data.first_air_date}<br>
+                        Calificacion: ${data.vote_average}<br>
+                        sinopsis: ${data.overview}<br>
+                        genero: ${data.genres.name}<br>
+                        <a href="./favorites.html">
+                            <button type="button" class="boton">Favoritos</button>
+                        </a>
+                    </p>
+                </ul>   
             </article>`
     })
     .catch(function(error) {

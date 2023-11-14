@@ -30,7 +30,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
     for(let i = 0; i < 5; i++){
         container2.innerHTML += `
         <article class="articles">
-                        <a href="./detailmovie.html">
+                        <a href="./detailmovie.html?id=${data.results[i].id}">
                             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
                         </a>
                         <h3 class="descripcion">${data.results[i].title}<br>${data.results[i].release_date}</h3>
@@ -51,7 +51,7 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     for(let i = 0; i < 5; i++){
         container3.innerHTML += `
         <article class="articles">
-                        <a href="./detailmovie.html">
+                        <a href="./detailserie.html?id=${data.results[i].id}">
                             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].name} class="img">
                         </a>
                         <h3 class="descripcion">${data.results[i].name}<br>${data.results[i].first_air_date}</h3>
@@ -62,7 +62,6 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
 .catch(function(error){
     console.log(error)
 })
-
 
 
 
