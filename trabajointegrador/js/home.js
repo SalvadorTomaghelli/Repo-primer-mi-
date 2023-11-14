@@ -9,7 +9,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
     for(let i = 0; i < 5; i++){
         container.innerHTML += `
         <article class="articles">
-                        <a href="./detailmovie.html">
+                        <a href="./detailmovie.html?id=${data.results[i].id}">
                             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
                             <h3 class="descripcion">${data.results[i].title}<br>${data.results[i].release_date}</h3>
                         </a>
