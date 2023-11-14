@@ -53,8 +53,8 @@ input[type="text"] {
     display: flex;
     flex-direction: row;
     font-size: 50px;
-
 }
+
 .img{
     width: 500px;
     height: 700px;
