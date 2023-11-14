@@ -20,13 +20,16 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
             propiedadLanzamiento = data.results[i].first_air_date
 
         }
-        container.innerHTML +=`g
-        <article>
+        container.innerHTML +=`
+        <article class= "articles">
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
-        </article>
+            <h3 class="descripcion">${propiedadNombre}<br> ${data.results[i].release_date}
+            </h3>
         <article>
+        
             <ul class="ul">
                 <p>
+                    
                     Nombre: ${propiedadNombre}<br> 
                     Fecha de estreno: ${propiedadLanzamiento}<br>
                     <a href="./favorites.html">
@@ -35,6 +38,8 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
                 </p>
             </ul>   
         </article>
+        </article>
+        
      `
     }
 })
