@@ -8,7 +8,15 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
     return resp.json()
 })
 .then(function(data){
+    container.innerHTML+=`<h1 class="h1"> Resultado de "${data.results[0].title}" </h1>`
     for(i=0; i< data.results.length; i++){
+        let propiedadNombre
+        let propiedadLanzamiento
+        if(data.results[i].title != undefined){
+            propiedadNombre = data.results[i].title
+        }else{
+            propiedadNombre = data.results[i].name
+        }
         container.innerHTML +=`
         <article>
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
@@ -16,7 +24,7 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
         <article>
             <ul class="ul">
                 <p>
-                    Nombre: ${data.results[i].title}<br> 
+                    Nombre: ${propiedadNombre}<br> 
                     Fecha de estreno: ${data.results[i].release_date}<br>
                     <a href="./favorites.html">
                         <button type="button" class="boton">Favoritos</button>
