@@ -23,24 +23,12 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
         container.innerHTML +=`
         <article class= "articles">
             <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt=${data.results[i].title} class="img">
-            <h3 class="descripcion">${propiedadNombre}<br> ${data.results[i].release_date}
-            </h3>
-        <article>
-        
-            <ul class="ul">
-                <p>
-                    
-                    Nombre: ${propiedadNombre}<br> 
-                    Fecha de estreno: ${propiedadLanzamiento}<br>
-                    <a href="./favorites.html">
-                        <button type="button" class="boton">Favoritos</button>
-                    </a>
-                </p>
-            </ul>   
-        </article>
-        </article>
-        
-     `
+            <h3 class="descripcion">${propiedadNombre}</h3> 
+            <h3>${propiedadLanzamiento} </h3>
+            <a href="./favorites.html">
+                <button type="button" class="boton">Favoritos</button>
+            </a>
+        </article>`
     }
 })
 .catch(function(err){
