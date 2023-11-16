@@ -4,32 +4,48 @@
     color: white;
     background-image: url(./PeliculasPoster/50\ Dark\ Black\ Backgrounds\ _\ Art\ and\ Design.jpg);
 }
-.section{
+/* .section{
     display: flex;
     flex-direction: row;
     font-size: 50px;
     color: white;
 
-}
+} */
 .h1{
     font-size: 50px;
+    text-align: center;
 }
-.img{
+/* .img{
     width: 500px;
     height: 700px;
-}
-.footer{
-    background-color: red;
+} */
+.footer {
+    background-color: red; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+  }
+  .h3Footer {
+    margin-bottom: 10px; 
+  }
+  .imgFooter {
+    width: 100px; 
+    height: auto;
+    border-radius: 50%;
+  }
+.h2{
+    color: white;
+    font-size: 40px;
 }
 
-.contenedor{
+/* .contenedor{
     width: 90%;
     margin: auto;
 }
 
 .header{
     padding: 30px 0;
-}
+} */
 
 header .contenedor{
     display: flex;
@@ -81,3 +97,34 @@ input[type="text"] {
         font-size: 30px;
     }
 }
+
+/* Nuevos estilos por el JS */
+#altaSerie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .article {
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+  } 
+  .poster{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .ul {
+    list-style: none;
+    padding: 0;
+  }
+  .boton {
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+  } 

@@ -12,8 +12,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
     .then(function(data) {
         console.log(data)
         container.innerHTML += `
-            <article>
-                <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
+            <article class="article">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
                 <ul class="ul">
                     <p>
                         Nombre: ${data.title}<br> 
