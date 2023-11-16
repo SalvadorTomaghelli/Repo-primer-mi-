@@ -34,7 +34,7 @@
     color: red;
 }
 
-/* Estilos del Header */
+/* Nuevo Header */
 .header {
     padding: 20px 0;
 }
@@ -196,6 +196,11 @@ input[type="text"] {
     align-items: center;
     width: 90%;
     margin: auto;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .buscador{
     padding: 10px;
