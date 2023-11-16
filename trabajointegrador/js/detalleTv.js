@@ -1,4 +1,4 @@
-let container = document.querySelector(".section")
+let container = document.querySelector("#altaSerie")
 let query = location.search;
 let objbusqueda = new URLSearchParams(query)
 let id= objbusqueda.get("id")
@@ -10,8 +10,8 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`)
     .then(function(data){
         console.log(data)
         container.innerHTML += `
-            <article>
-                <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
+            <article class="article">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" />
                 <ul class="ul">
                     <p>
                         Nombre: ${data.original_name}<br> 

@@ -33,8 +33,23 @@ h2{
     width: 200px;
     height: 300px;  
 }
-.footer{
-    background-color: red;
+.footer {
+    background-color: red; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+  }
+  .h3Footer {
+    margin-bottom: 10px; 
+  }
+  .imgFooter {
+    width: 100px; 
+    height: auto;
+    border-radius: 50%;
+  }
+.h2{
+    color: white;
+    font-size: 40px;
 }
 .contenedor{
     width: 90%;
