@@ -8,7 +8,7 @@ let type = objbusqueda.get("type")
 let query1 = location.search;
 let objbusqueda1 = new URLSearchParams(query1);
 let nameGenre= objbusqueda1.get("nameGenre")
-
+console.log(id)
 let apiKey= '26cb00ba0e4d52cae073a420c45e2d99'
 fetch(`https://api.themoviedb.org/3/discover/${type}/?api_key=${apiKey}&with_genres=${id}`)
 .then(function(response){

@@ -32,7 +32,7 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}`)
     for (let i = 0; i < data.genres.length; i++){
         container2.innerHTML += `
         <div class = "bloque">
-                <a href="./generodetalles.html?idd=${data.genres[i].id}&nameGenree=${data.genres[i].name}&type=tv">
+                <a href="./generodetalles.html?id=${data.genres[i].id}&nameGenre=${data.genres[i].name}&type=tv">
                     <p class="palabra">${data.genres[i].name}</p>
                 </a>
             </div>
