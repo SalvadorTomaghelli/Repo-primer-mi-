@@ -7,16 +7,23 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
 .then(function(resp){
     return resp.json()
 })
+fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${peliculaOSerieBuscada}`)
+.then(function(resp){
+    return resp.json()
+})
 .then(function(data){
     for(i=0; i<data.results.length; i++){
         let propiedadNombre
         let propiedadLanzamiento
+        let redireccion
         if(data.results[i].title != undefined){
             propiedadNombre = data.results[i].title
             propiedadLanzamiento = data.results[i].release_date
+            redireccion= "movie"
         }else{
             propiedadNombre = data.results[i].name
             propiedadLanzamiento = data.results[i].first_air_date
+            redireccion= "serie"
         }
         container.innerHTML +=`
         <article class= "articles">
@@ -26,8 +33,12 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${pelic
             <a href="./favorites.html">
                 <button type="button" class="boton">Favoritos</button>
             </a>
+            <a href="./detail${redireccion}.html?id=${data.results[i].id}" > 
+                <button type="button" class= "boton"> Ir a detalles </button>
+            </a>
         </article>`
     }
+    container.innerHTML +=`<h1>Resultado de ${propiedadNombre}</h1>`
 })
 .catch(function(err){
     console.log(err)

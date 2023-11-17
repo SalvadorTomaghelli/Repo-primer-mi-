@@ -123,3 +123,8 @@ input[type="text"] {
     color: red;
     margin-left: 20px;
 }
+.boton {
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+  } 

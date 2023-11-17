@@ -165,3 +165,14 @@ input[type="text"] {
     background-color: red;
     color: white;
   } 
+  #pelicularecomendaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .super{
+    text-align: center;
+  }
